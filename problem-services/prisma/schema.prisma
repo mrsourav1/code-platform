@@ -25,6 +25,17 @@ model Problem {
   updatedAt      DateTime   @default(now())
 }
 
+model Submission {
+  id         String   @id @default(uuid())
+  problemId  String
+  language   String
+  sourceCode String
+  status     String // PENDING | RUNNING | ACCEPTED | WA | TLE | CE
+  runTime    Int?
+  memory     Int?
+  createdAt  DateTime @default(now())
+}
+
 enum Difficulty {
   EASY
   MEDIUM

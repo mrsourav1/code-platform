@@ -22,3 +22,8 @@ export * from './enums.js';
  * 
  */
 export type Problem = Prisma.ProblemModel
+/**
+ * Model Submission
+ * 
+ */
+export type Submission = Prisma.SubmissionModel

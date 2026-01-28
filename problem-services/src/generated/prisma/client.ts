@@ -44,3 +44,8 @@ export { Prisma }
  * 
  */
 export type Problem = Prisma.ProblemModel
+/**
+ * Model Submission
+ * 
+ */
+export type Submission = Prisma.SubmissionModel

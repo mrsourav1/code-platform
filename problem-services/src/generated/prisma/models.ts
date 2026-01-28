@@ -9,4 +9,5 @@
  * 🟢 You can import this file directly.
  */
 export type * from './models/Problem.js'
+export type * from './models/Submission.js'
 export type * from './commonInputTypes.js'

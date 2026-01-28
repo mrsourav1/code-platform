@@ -28,7 +28,6 @@ export class ProblemService {
             constraints?: Buffer | undefined;
         }
     ) {
-        console.log("this is file",files)
         const contentPath = await this.storage.uploadProblemContent(slug,files)
         return this.repo.updateContent(slug, {
             statementUrl: `${contentPath}/statement.md`,

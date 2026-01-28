@@ -51,7 +51,8 @@ export const AnyNull = runtime.AnyNull
 
 
 export const ModelName = {
-  Problem: 'Problem'
+  Problem: 'Problem',
+  Submission: 'Submission'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -85,6 +86,20 @@ export const ProblemScalarFieldEnum = {
 export type ProblemScalarFieldEnum = (typeof ProblemScalarFieldEnum)[keyof typeof ProblemScalarFieldEnum]
 
 
+export const SubmissionScalarFieldEnum = {
+  id: 'id',
+  problemId: 'problemId',
+  language: 'language',
+  sourceCode: 'sourceCode',
+  status: 'status',
+  runTime: 'runTime',
+  memory: 'memory',
+  createdAt: 'createdAt'
+} as const
+
+export type SubmissionScalarFieldEnum = (typeof SubmissionScalarFieldEnum)[keyof typeof SubmissionScalarFieldEnum]
+
+
 export const SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -111,4 +126,15 @@ export const ProblemOrderByRelevanceFieldEnum = {
 } as const
 
 export type ProblemOrderByRelevanceFieldEnum = (typeof ProblemOrderByRelevanceFieldEnum)[keyof typeof ProblemOrderByRelevanceFieldEnum]
+
+
+export const SubmissionOrderByRelevanceFieldEnum = {
+  id: 'id',
+  problemId: 'problemId',
+  language: 'language',
+  sourceCode: 'sourceCode',
+  status: 'status'
+} as const
+
+export type SubmissionOrderByRelevanceFieldEnum = (typeof SubmissionOrderByRelevanceFieldEnum)[keyof typeof SubmissionOrderByRelevanceFieldEnum]
 

@@ -44,7 +44,6 @@ export class ProblemController {
         res.json(updated);
     }
 
-
     async getBySlug(req: Request, res: Response) {
         if (!req.params.slug) {
             return res.status(400).json("Slug is required")
